@@ -1,0 +1,17 @@
+this is our api link
+"http://localhost/bank_api/api/take_card.php"
+
+you must give us these varibles 
+card_name,          //for card type
+card_pass,          //for card password 
+card_num,           //for card number
+Expired_date,       //for card Expired date  
+url,                //for your website
+cost.               //for cost of products 
+
+and we return $id 
+0 if the data card(name,paas,number)is wrong 
+1 if the date card is wrong or Expired
+2 if the cost greater than account balance
+3 if mistake in process 
+4 if the process is done 
