@@ -19,12 +19,12 @@
 
 
 
-     $name_cust =$_POST['name'];
-     $num_cust=$_POST['num'];
-     $pass_cust=$_POST['pass'];
-     $date_cust=$_POST['Exp_date'];
-     $url_web=$_POST['url'];
-     $totalcost='60';
+     //$name_cust =$_POST['name'];
+     //$num_cust=$_POST['num'];
+     //$pass_cust=$_POST['pass'];
+     //$date_cust=$_POST['Exp_date'];
+     //$url_web=$_POST['url'];
+     //$totalcost='60';
      //$id_web_account=2;
      $num_web_card='123456789';
      $pass_web='123456789';
@@ -38,6 +38,8 @@
     $url_web=$_POST['url'];
     $totalcost=$_POST['cost'];
     $user=$_POST['user_id'];
+    $num_web_card=$_POST['web_id'];
+    $pass_web=$_POST['web_pass'];
 
     
     $web=$item1->getUser(); //for check users 
