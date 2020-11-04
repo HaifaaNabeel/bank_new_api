@@ -17,6 +17,7 @@
     $cost=$_POST['cost'];
     $reut=0;
     $id=0;
+    $user=$_POST['user'];
     //$name ="vas";
     //$num='1245';
     //$pass='www';
@@ -75,7 +76,7 @@
         //echo '<br><br> Nooooooooooooo';
     }
 
-    header("location:".$url."?id=".$id);
+    header("location:".$url."?id=".$id."&user=".$user);
     exit();
     //echo $id;
     //echo $cost;
