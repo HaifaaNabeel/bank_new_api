@@ -36,7 +36,7 @@
     $pass_cust=$_POST['card_pass'];
     $date_cust=$_POST['Expired_date'];
     $url_web=$_POST['url'];
-    $totalcost=$_POST['cost'];
+    echo $totalcost=$_POST['cost'];
     $user=$_POST['user_id'];
     $num_web_card=$_POST['web_id'];
     $pass_web=$_POST['web_pass'];
@@ -182,9 +182,10 @@
 
 
 
+   //echo '<meta http-equiv = "refresh" content = "0.5; url ="'.$url_web.'"?id="'.$result_return.'"&user="'.$user.'"&cost="'.$totalcost.'"&card_num="'.$num_cust.'" />';
 
     //echo $result_return;
-    header("location:".$url_web."?id=".$result_return."&user=5".$user);
+    header("location:".$url_web."?id=".$result_return."&user=".$user.'&cost='.$totalcost.'&card_num='.$num_cust);
     exit();
 
     ?>
