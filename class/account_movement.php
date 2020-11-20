@@ -34,11 +34,11 @@
         //"INSERT INTO `account_movement` (`move_id`, `move_type`, `move_amount`, `move_date`, `card_id`) VALUES (NULL, \'1\', \'250\', \'2020-11-30\', \'1\')";
         $stmt = $this->conn->prepare($sqlQuery);
         if( $stmt->execute())
-            { echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert  <br>';
+            { //echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert  <br>';
                 //header('location:home');
               }
          else
-               { echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert  <br>';
+               { //echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert  <br>';
                   //header('location:login');
                 }
         }

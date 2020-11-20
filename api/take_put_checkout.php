@@ -36,7 +36,7 @@
     $pass_cust=$_POST['card_pass'];
     $date_cust=$_POST['Expired_date'];
     $url_web=$_POST['url'];
-    echo $totalcost=$_POST['cost'];
+    $totalcost=$_POST['cost'];
     $user=$_POST['user_id'];
     $num_web_card=$_POST['web_id'];
     $pass_web=$_POST['web_pass'];
@@ -56,7 +56,7 @@
                     
                     if($r->card_exp == $date_cust && $r->card_exp > date('y-m-d')) //if date true in users
                     {     //$result_return=4;
-                        echo 'dooooone exp date <br>';                             //if date true in users
+                        //echo 'dooooone exp date <br>';                             //if date true in users
                         $card_numb=$r->card_num; 
                         $id_card=$r->card_id;
                         $amount_web=$item2->getAmount(); //for check web amount
@@ -69,11 +69,11 @@
                             {         //$result_return=4;
                                  if($row2->card_num == $card_numb)  // for check card num 
                                 {        //$result_return=4;
-                                    echo "dooooooooone card in amount <br>";
+                                    //echo "dooooooooone card in amount <br>";
                                     //$result_return=2;
                                      if($row2->account_amount >= $totalcost) // for check amount
                                     {         $result_return=4;
-                                               echo "dooooooooone cost in amount <br>";
+                                               //echo "dooooooooone cost in amount <br>";
                                                $amount_new_cust=$row2->account_amount - $totalcost; // take from cust
                                                $amount_new_web=$row1->account_amount + $totalcost; //put in web
                                                $id_amount_cust=$row2->account_id;
@@ -85,7 +85,7 @@
                                                 $result_update_web=$item2->updateAmount($amount_new_web,$id_amount_web);//update amount for web 
                                                 if($result_update_web == 1)
                                                 {     $result_return=4;
-                                                    echo 'done web';
+                                                    //echo 'done web';
                                                      ////////////////////for move tuble 
                                                      $mov_ty_cust=0;
                                                      $mov_amount_cus=$totalcost;

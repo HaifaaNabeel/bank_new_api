@@ -29,11 +29,11 @@
         public function insertMove($mov_ty,$mov_amou,$mov_date,$card_id){
         $final_query="INSERT INTO `account_movement` (`move_type`, `move_amount`, `move_date`, `card_id`) VALUES ('$mov_ty','$mov_amou','$mov_date','$card_id')";
         if( $this->db->executea($final_query))
-            { echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert';
+            { //echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert';
                 //header('location:home');
               }
          else
-               { echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert';
+               { //echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert';
                   //header('location:login');
                 }
        }
@@ -50,7 +50,7 @@
               $stmt = $this->conn->prepare($sql);
             //print_r( $stmt);
               $stmt->execute(); 
-            echo "Data Update Successfuly in DataBase :)";
+            //echo "Data Update Successfuly in DataBase :)";
             return 1;
            }
           catch(PDOException $e) 

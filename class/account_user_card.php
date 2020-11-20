@@ -33,11 +33,11 @@
             $final_query="INSERT INTO `account_user_card` (`card_id`, `card_num`, `card_pass`, `card_exp`) VALUES ('$mov_ty','$mov_amou','$mov_date','$card_id')";
             
             if( $this->db->executea($final_query))
-               { echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert';
+               { //echo 'done hhhhhhhhhhhhhhhhhhhhhhhhh insert';
                 //header('location:home');
                }
             else
-               { echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert';
+               { //echo 'not done mmmmmmmmmmmmmmmmmmmmmmm insert';
                   //header('location:login');
                }
  }
